@@ -3,6 +3,7 @@ import Description from './Description/Description';
 import Detail from './Detail/Detail';
 import './Item.css';
 import Related from './Related/Related';
+import Reviews from './Reviews';
 
 const Item = (props) => {
     return ( 
@@ -13,6 +14,9 @@ const Item = (props) => {
             </div>
             <div className="item__description__container">
                 <Description item={props.item}/>
+            </div>
+            <div className="related__items__container">
+                <Reviews/>
             </div>
             <div className="related__items__container">
                 <Related category={props.item.category}/>
